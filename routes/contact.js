@@ -6,14 +6,14 @@ const rootDir = require('../utils/path')
 
 
 
-router.get('/add-products',(req,res,next)=>{
-    res.sendFile(path.join(rootDir,'views','add-product.html'))
+router.get('/contact-us',(req,res,next)=>{
+    res.sendFile(path.join(rootDir,'views','contact-us.html'))
 })
 
 
-router.post('/add-products',(req,res,next)=>{
+router.post('/contact-us',(req,res,next)=>{
     console.log(req.body)
-    res.redirect('/')
+    res.redirect('/success')
   
 })
 

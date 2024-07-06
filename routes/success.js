@@ -6,8 +6,9 @@ const rootDir = require('../utils/path')
 
 
 
-router.get('/',(req,res,next)=>{
-    res.sendFile(path.join(rootDir,'views','shop.html'))
+router.get('/success',(req,res,next)=>{
+    res.sendFile(path.join(rootDir,'views','success.html'))
+
 })
 
 
